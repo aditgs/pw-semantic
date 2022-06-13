@@ -31,6 +31,7 @@ nav a {
 }
 nav a:hover {
     background-color:tomato;
+    border-radius: 25px;
     color: white;
 }
 
@@ -39,8 +40,146 @@ nav a:hover {
     width: 50%;
     padding: 10px;
 }
+.hero {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-title{
+    position: relative;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 60px;
+  }
+  
+  .section-title:before{
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background: #3a6cf4;
+    transform: translateX(-50%);
+  }
+  
+  .section-title:after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #3a6cf4;
+    transform: translateX(-50%);
+  }
+  
+  .about .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .about .content .col-left{
+    position: relative;
+    width: 45%;
+  }
+  
+  .about .content .col-right{
+    position: relative;
+    width: 50%;
+  }
+  
+  .about .content .col-left .img-card{
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+  }
+  
+  .about .content .col-left .img-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .about .content .col-right .content-title{
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .about .content .col-right .paragraph-text{
+    font-size: 1em;
+  }
+
+  .gallery{
+    background: #000016;
+  }
+  
+  .gallery .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .gallery .content .card{
+    width: 340px;
+    margin: 15px;
+  }
+  
+  .gallery .content .card .card-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .gallery .content .card .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+  
+  .gallery .content .card .card-img img:hover{
+    transform: scale(1.2);
+  }
+
 .card {
     background-color: tomato;
+    padding: 20px;
+    margin-top: 20px;
+}
+.hero-card {
     padding: 20px;
     margin-top: 20px;
 }
